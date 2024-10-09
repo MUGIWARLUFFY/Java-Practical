@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>page1</servlet-name>
+        <servlet-class>mypack.page1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>page2</servlet-name>
+        <servlet-class>mypack.page2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>page3</servlet-name>
+        <servlet-class>mypack.page3</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>page4</servlet-name>
+        <servlet-class>mypack.page4</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>page1</servlet-name>
+        <url-pattern>/page1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>page2</servlet-name>
+        <url-pattern>/page2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>page3</servlet-name>
+        <url-pattern>/page3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>page4</servlet-name>
+        <url-pattern>/page4</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
